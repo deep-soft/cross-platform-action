@@ -32,6 +32,7 @@ runs:
           architecture: ${{ inputs.architecture }}
           version: '${{ inputs.version }}'
           run: |
+            sudo pkg install curl
             uname -a
             echo $SHELL
             pwd
